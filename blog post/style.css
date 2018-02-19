@@ -16,15 +16,13 @@ body {
 }
 
 h1, h2 {
-    color: #00960b;
-    
+    color: #069a11;
 }
 
 h1 {
     font-size: 40px;
     margin-bottom: 20px;
 }
-
 
 h2 {
     font-size: 25px;
@@ -44,7 +42,7 @@ h2 {
 }
 
 .container {
-    width: 1140px;
+    width: 1040px;
     margin: 20px auto 0 auto;
 }
 
@@ -52,21 +50,22 @@ h2 {
     width: 75%;
     float: left;
     padding-right: 30px;
-    position: relative;
+   position: relative; /* This is a parent so setting this allows us to use absolute positioning */
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto; /* Maintain the aspect ratio of the image */
 }
 
 .other-posts {
     width: 25%;
-    float: left;
+    float: left; /* Allows this element to be side by side "wrap-around" another element */
 }
 
 .author-box {
     padding-top: 20px;
     border-top: 1px solid #808080;
-}
-
-.other {
-    margin-bottom: 40px;
 }
 
 .author-box img {
@@ -76,13 +75,24 @@ h2 {
     float: left;
 }
 
-.blog-post img {
-    height: 150px;
-    width: auto;
+.other {
+    margin-bottom: 40px;
 }
 
 .date {
-    position: absolute;
+    position: absolute; /* Parent element must be relative */
     top: 10px;
     right: 30px;
 }
+
+/*.main-header {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color: green;
+    width: 100%;
+    line-height: 23px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}*/

@@ -1,0 +1,61 @@
+/*
+Main text color: #4a4a4a;
+*/
+
+/* ---------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #4a4a4a;
+    font-family: 'Avenir', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+/* ---------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------- */
+header {
+    background-color: #4a4a4a;
+    height: 132px;
+    width: 100%;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    margin: 25px 0 25px 40px;
+    font-size: 300%;
+    letter-spacing: 2px;
+}
+
+/* ---------------------------------------------- */
+/* NAVIGATOR */
+/* ---------------------------------------------- */
+.main-nav {
+    list-style: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline-block;
+    font-weight: 100;
+    font-size: 90%;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 20px;
+}

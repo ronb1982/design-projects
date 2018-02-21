@@ -116,6 +116,7 @@ select {
     background-color: #2c2c2c;
     width: 275px;
     font-size: 80%;
+    position: relative;
 }
 
 .info-box-row {
@@ -161,11 +162,30 @@ select {
     font-size: 85%;
 }
 
+.info-box-name {
+    margin-top: 5px;
+}
+
 .info-box-name a {
     color: #43a2f3;
     font-weight: bold;
 }
 
+.fa-heart {
+    font-size: 140%;
+    font-weight: 100;
+    color: #efefef;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 63%;
+    right: 6%;
+    transition: color 0.2s;
+}
+
+.fa-heart:hover {
+    color: #43a2f3;
+}
 /* ---------------------------------------------- */
 /* NAVIGATION */
 /* ---------------------------------------------- */

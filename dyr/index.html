@@ -10,20 +10,23 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link href="https://fonts.googleapis.com/css?family=Avenir:100,300,300i,400" rel="stylesheet">
+        <!--
+<link href="https://fonts.googleapis.com/css?family=Avenir:100,300,300i,400" rel="stylesheet">
+-->
+
         <title>DYR</title>
-        
+
         <!-- FAVICONS
-        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/resources/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        -->
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+<link rel="manifest" href="/resources/favicons/site.webmanifest">
+<link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+-->
     </head>
     <body>
         <header>
@@ -41,7 +44,7 @@
                 </div>
             </nav>
             <div class="banner-text">
-                <h1>There are likely hundreds of adoptable cats and dogs in your area right now who would love to join your family.</h1>
+                <h1>Find hundreds of adoptable pets at shelters in your area.</h1>
             </div>
         </header>
         <section class="section-search">
@@ -60,8 +63,6 @@
                 <div class="search-field">
                     <select name="breed">
                         <option value="" selected disabled hidden>Select Breed (Optional)</option>
-                        <option value="dogs">Dogs</option>
-                        <option value="cats">Cats</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -69,6 +70,129 @@
                     <a class="btn btn-primary" href="#">Find a pet</a>
                 </div>
             </form>
+        </section>
+        <section class="section-featured">
+            <div class="row section-title">
+                <h2>Featured Pets</h2>
+                <hr>
+            </div>
+            <div class="row info-box-row">
+                <div class="col span-1-of-3">
+                    <div class="info-box">
+                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
+                        <p class="info-box-name"><a href="#">Lily</a></p>
+                        <p class="pet-breed">American Foxhound</p>
+                        <div class="additional-info">
+                            <p>Young - Female - Large</p>
+                            <br>
+                            <p>Bayside, NY</p>
+                        </div>
+                        <div class="info-box-link">
+                            <a href="#">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="info-box">
+                        <a href="#"><img src="resources/img/west-highland-terrier.jpg" alt="American Foxhound"></a>
+                        <p class="info-box-name"><a href="#">Cali</a></p>
+                        <p class="pet-breed">West Highland Terrier</p>
+                        <div class="additional-info">
+                            <p>Young - Male - Small</p>
+                            <br>
+                            <p>New York, NY</p>
+                        </div>
+                        <div class="info-box-link">
+                            <a href="#">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="info-box">
+                        <a href="#"><img src="resources/img/domestic-short-hair-cat.jpg" alt="American Foxhound"></a>
+                        <p class="info-box-name"><a href="#">Melika</a></p>
+                        <p class="pet-breed">Domestic Short Hair</p>
+                        <div class="additional-info">
+                            <p>Adult - Female - Large</p>
+                            <br>
+                            <p>Los Angeles, CA</p>
+                        </div>
+                        <div class="info-box-link">
+                            <a href="#">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-description">
+            <ul class="description clearfix">
+                <li>
+                    <figure class="description-text">
+                        <h4>DYR is an association of animal shelters.</h4><br>
+                        <p>We partner with shelters all over the country to raise awareness and discoverability to the work and pets waiting for a home.</p><br>
+                        <p>Around 6.5 million companion animals enter US animal 
+                            shelters nationwide every year, mostly cats (3.2 millions)
+                            and dogs (3.3   millions). Each year, about 1.5 million 
+                            shelter animals are euthanized (670.000 dogs and 
+                            860.000 cats) and around 3.2 million shelter animals
+                            are adopted.</p><br>
+                        <p>Those are a lot of pets! Breeders don’t help on this, 
+                            puppy mills contribute to animal overpopulation, and
+                            every time someone purchases a puppy or kitten from
+                            a breeder instead of adopting them, it increases the
+                            chances of animals being euthanized.</p>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="description-photo">
+                        <img src="resources/img/cat-description.jpg" alt="Cat image">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="section-get-involved">
+            <div class="row section-title">
+                <h2>Get Involved</h2>
+                <hr>
+            </div>
+            <div class="row info-box-row">
+                <div class="col span-1-of-3">
+                    <div class="info-box">
+                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
+                        <p class="info-box-name"><a href="#">Donate</a></p>
+                        <div class="additional-info">
+                            <p>Every dollar can make a difference for animals in need. Join us by giving a gift today!</p>
+                        </div>
+                        <div class="info-box-link">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="info-box">
+                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
+                        <p class="info-box-name"><a href="#">Adopt</a></p>
+                        <div class="additional-info">
+                            <p>You won't change the world by saving a pet, but you'll change that pet's world.</p>
+                        </div>
+                        <div class="info-box-link">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="info-box">
+                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
+                        <p class="info-box-name"><a href="#">Volunteer</a></p>
+                        <div class="additional-info">
+                            <p>Volunteering is a great way to help pets in need, and meet other caring people like you!</p>
+                        </div>
+                        <div class="info-box-link">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 </html>

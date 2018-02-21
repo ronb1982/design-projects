@@ -44,7 +44,31 @@
                 <h1>There are likely hundreds of adoptable cats and dogs in your area right now who would love to join your family.</h1>
             </div>
         </header>
-        <section>
+        <section class="section-search">
+            <form method="post" action="#">
+                <div class="search-field">
+                    <input type="text" placeholder="Enter Location">
+                </div>
+                <div class="search-field">
+                    <select name="pet-type">
+                        <option value="" selected disabled hidden>Select Pet Type</option>
+                        <option value="dogs">Dogs</option>
+                        <option value="cats">Cats</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <select name="breed">
+                        <option value="" selected disabled hidden>Select Breed (Optional)</option>
+                        <option value="dogs">Dogs</option>
+                        <option value="cats">Cats</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <a class="btn btn-primary" href="#">Find a pet</a>
+                </div>
+            </form>
         </section>
     </body>
 </html>

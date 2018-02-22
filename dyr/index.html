@@ -9,33 +9,16 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        
+
         <script src="vendors/js/fontawesome-all.min.js"></script>
-        
-        <!--
-<link href="https://fonts.googleapis.com/css?family=Avenir:100,300,300i,400" rel="stylesheet">
--->
-
         <title>DYR</title>
-
-        <!-- FAVICONS
-<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
-<link rel="manifest" href="/resources/favicons/site.webmanifest">
-<link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/resources/favicons/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
--->
     </head>
     <body>
         <header>
             <nav>
                 <div class="row">
                     <a href="#" class="logo">DYR</a>
-                    <ul class="main-nav">
+                    <ul class="nav main-nav">
                         <li><a href="#">Find a Pet</a></li>
                         <li><a href="#">Find Shelters & Rescues</a></li>
                         <li><a href="#">Adoption Info</a></li>
@@ -51,10 +34,10 @@
         </header>
         <section class="section-search">
             <form method="post" action="#">
-                <div class="search-field">
+                <div class="input-field">
                     <input type="text" placeholder="Enter Location">
                 </div>
-                <div class="search-field">
+                <div class="input-field">
                     <select name="pet-type">
                         <option value="" selected disabled hidden>Select Pet Type</option>
                         <option value="dogs">Dogs</option>
@@ -62,13 +45,13 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
-                <div class="search-field">
+                <div class="input-field">
                     <select name="breed">
                         <option value="" selected disabled hidden>Select Breed (Optional)</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
-                <div class="search-field">
+                <div class="input-field">
                     <a class="btn btn-primary" href="#">Find a pet</a>
                 </div>
             </form>
@@ -82,9 +65,7 @@
                 <div class="col span-1-of-3">
                     <div class="info-box">
                         <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
-                        <p class="info-box-name">
-                            <a href="#">Lily</a>
-                        </p>
+                        <a class="info-box-name" href="#">Lily</a>
                         <i class="far fa-heart"></i>
                         <p class="pet-breed">American Foxhound</p>
                         <div class="additional-info">
@@ -99,10 +80,8 @@
                 </div>
                 <div class="col span-1-of-3">
                     <div class="info-box">
-                        <a href="#"><img src="resources/img/west-highland-terrier.jpg" alt="American Foxhound"></a>
-                        <p class="info-box-name">
-                            <a href="#">Cali</a>
-                        </p>
+                        <a href="#"><img src="resources/img/west-highland-terrier.jpg" alt="West Highland Terrier"></a>
+                        <a class="info-box-name" href="#">Cali</a>
                         <i class="far fa-heart"></i>
                         <p class="pet-breed">West Highland Terrier</p>
                         <div class="additional-info">
@@ -117,10 +96,8 @@
                 </div>
                 <div class="col span-1-of-3">
                     <div class="info-box">
-                        <a href="#"><img src="resources/img/domestic-short-hair-cat.jpg" alt="American Foxhound"></a>
-                        <p class="info-box-name">
-                            <a href="#">Melika</a>
-                        </p>
+                        <a href="#"><img src="resources/img/domestic-short-hair-cat.jpg" alt="Domestic Short Hair Cat"></a>
+                        <a class="info-box-name" href="#">Melika</a>
                         <i class="far fa-heart"></i>
                         <p class="pet-breed">Domestic Short Hair</p>
                         <div class="additional-info">
@@ -155,9 +132,7 @@
                     </figure>
                 </li>
                 <li>
-                    <figure class="description-photo">
-                        <img src="resources/img/cat-description.jpg" alt="Cat image">
-                    </figure>
+                    <figure class="description-photo"></figure>
                 </li>
             </ul>
         </section>
@@ -169,8 +144,8 @@
             <div class="row info-box-row">
                 <div class="col span-1-of-3">
                     <div class="info-box">
-                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
-                        <p class="info-box-name"><a href="#">Donate</a></p>
+                        <a href="#"><img src="resources/img/donation-cash.jpg" alt="Donate"></a>
+                        <a class="info-box-name" href="#">Donate</a>
                         <div class="additional-info">
                             <p>Every dollar can make a difference for animals in need. Join us by giving a gift today!</p>
                         </div>
@@ -181,8 +156,8 @@
                 </div>
                 <div class="col span-1-of-3">
                     <div class="info-box">
-                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
-                        <p class="info-box-name"><a href="#">Adopt</a></p>
+                        <a href="#"><img src="resources/img/adopt-dog.jpg" alt="Adopt"></a>
+                        <a class="info-box-name" href="#">Adopt</a>
                         <div class="additional-info">
                             <p>You won't change the world by saving a pet, but you'll change that pet's world.</p>
                         </div>
@@ -193,8 +168,8 @@
                 </div>
                 <div class="col span-1-of-3">
                     <div class="info-box">
-                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
-                        <p class="info-box-name"><a href="#">Volunteer</a></p>
+                        <a href="#"><img src="resources/img/volunteer-dog.jpg" alt="Volunteer"></a>
+                        <a class="info-box-name" href="#">Volunteer</a>
                         <div class="additional-info">
                             <p>Volunteering is a great way to help pets in need, and meet other caring people like you!</p>
                         </div>
@@ -205,6 +180,46 @@
                 </div>
             </div>
         </section>
+        <section class="section-newsletter">
+            <form method="post" action="#">
+                <p>Stay up to date</p>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Name">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Enter Email">
+                </div>
+                <div class="input-field">
+                    <a class="btn btn-primary" href="#">Subscribe</a>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div class="row">
+                <a href="#" class="logo">DYR</a>
+            </div>
+            <div class="row">
+                <ul class="nav footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partnering Shelters</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <p>Made in New York - Copyright 2017 - All rights reserved.</p>
+            </div>
+        </footer>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
     </body>
 </html>

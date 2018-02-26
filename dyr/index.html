@@ -18,7 +18,10 @@
             <nav>
                 <div class="row">
                     <a href="#" class="logo">DYR</a>
-                    <ul class="nav main-nav">
+                    <a class="mobile-nav-icon js--nav-icon">
+                        <i class="icon fas fa-bars"></i>
+                    </a>
+                    <ul class="nav main-nav js--main-nav">
                         <li><a href="#">Find a Pet</a></li>
                         <li><a href="#">Find Shelters & Rescues</a></li>
                         <li><a href="#">Adoption Info</a></li>
@@ -181,18 +184,20 @@
             </div>
         </section>
         <section class="section-newsletter">
-            <form method="post" action="#">
-                <p>Stay up to date</p>
-                <div class="input-field">
-                    <input type="text" placeholder="Enter Name">
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Enter Email">
-                </div>
-                <div class="input-field">
-                    <a class="btn btn-primary" href="#">Subscribe</a>
-                </div>
-            </form>
+            <div class="row">
+                <form method="post" action="#">
+                    <p>Stay up to date</p>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter Email">
+                    </div>
+                    <div class="input-field">
+                        <a class="btn btn-primary" href="#">Subscribe</a>
+                    </div>
+                </form>
+            </div>
         </section>
         <footer>
             <div class="row">
@@ -220,6 +225,8 @@
                 <p>Made in New York - Copyright 2017 - All rights reserved.</p>
             </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 </html>

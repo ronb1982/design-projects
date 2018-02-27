@@ -87,7 +87,7 @@ section {
     padding: 40px 0;
 }
 
-.row {
+.row, .owl-carousel {
     max-width: 1320px;
     margin: 0 auto;
 }
@@ -149,9 +149,9 @@ select {
 .info-box {
     color: #ccc;
     background-color: #2c2c2c;
-    width: 70%;
+    width: 90%;
     position: relative;
-    margin-left: 15%;
+    margin-left: 5%;
 }
 
 .info-box p,
@@ -224,7 +224,7 @@ select {
     color: #efefef;
     cursor: pointer;
     float: right;
-    margin-right: 15px;
+    margin-right: 10px;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
@@ -305,6 +305,9 @@ nav {
     font-style: italic;
 }
 
+.info-box .details {
+    margin-top: 10px;
+}
 /* ---------------------------------------------- */
 /* DESCRIPTION */
 /* ---------------------------------------------- */
@@ -437,4 +440,11 @@ footer .row {
 
 footer .row:last-child {
     font-size: 50%;
+}
+
+/* ---------------------------------------------- */
+/* OWL SLIDER STYLES */
+/* ---------------------------------------------- */
+.owl-theme .owl-nav [class*=owl-] {
+    background-color: #2c2c2c !important;
 }

@@ -161,9 +161,8 @@
     }
         
     .col {
-        width: 60%;
+        width: 100%;
         padding: 0;
-        margin-left: 20% !important;
     }
     
     .info-box { margin-bottom: 25px; }
@@ -179,10 +178,6 @@
     }
     
     .fa-heart { top: 65%; }
-}
-
-@media only screen and (max-width: 640px) {
-    
 }
 
 /* Styles for several issues occurring between 480px and 600px */
@@ -214,9 +209,9 @@
         display: block;
     }
     
-    .footer-nav li:last-child {
-        margin-bottom: 30px;
-    }
+    .footer-nav li:last-child { margin-bottom: 30px; }
+    
+    .owl-carousel { padding: 0 4%; }
 }
 
 /* Small phones from 0 to 480 px - old iPhones 4 and 5 */

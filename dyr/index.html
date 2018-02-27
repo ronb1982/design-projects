@@ -9,7 +9,9 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-
+        <link rel="stylesheet" type="text/css" href="/vendors/css/owl.carousel.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/vendors/css/owl.theme.default.min.css"/>
+        
         <script src="vendors/js/fontawesome-all.min.js"></script>
         <title>DYR</title>
     </head>
@@ -59,15 +61,16 @@
                 </div>
             </form>
         </section>
+        
         <section class="section-featured">
             <div class="row section-title">
                 <h2>Featured Pets</h2>
                 <hr>
             </div>
-            <div class="row info-box-row">
-                <div class="col span-1-of-3">
-                    <div class="info-box">
-                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
+            <div class="info-box-row owl-carousel owl-theme">
+                <div class="info-box">
+                    <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
+                    <div class="details">
                         <a class="info-box-name" href="#">Lily</a>
                         <i class="far fa-heart"></i>
                         <p class="pet-breed">American Foxhound</p>
@@ -76,14 +79,14 @@
                             <br>
                             <p>Bayside, NY</p>
                         </div>
-                        <div class="info-box-link">
-                            <a href="#">View Profile</a>
-                        </div>
+                    </div>
+                    <div class="info-box-link">
+                        <a href="#">View Profile</a>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <div class="info-box">
-                        <a href="#"><img src="resources/img/west-highland-terrier.jpg" alt="West Highland Terrier"></a>
+                <div class="info-box">
+                    <a href="#"><img src="resources/img/west-highland-terrier.jpg" alt="West Highland Terrier"></a>
+                    <div class="details">
                         <a class="info-box-name" href="#">Cali</a>
                         <i class="far fa-heart"></i>
                         <p class="pet-breed">West Highland Terrier</p>
@@ -92,14 +95,14 @@
                             <br>
                             <p>New York, NY</p>
                         </div>
-                        <div class="info-box-link">
-                            <a href="#">View Profile</a>
-                        </div>
+                    </div>
+                    <div class="info-box-link">
+                        <a href="#">View Profile</a>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <div class="info-box">
-                        <a href="#"><img src="resources/img/domestic-short-hair-cat.jpg" alt="Domestic Short Hair Cat"></a>
+                <div class="info-box">
+                    <a href="#"><img src="resources/img/domestic-short-hair-cat.jpg" alt="Domestic Short Hair Cat"></a>
+                    <div class="details">
                         <a class="info-box-name" href="#">Melika</a>
                         <i class="far fa-heart"></i>
                         <p class="pet-breed">Domestic Short Hair</p>
@@ -108,9 +111,41 @@
                             <br>
                             <p>Los Angeles, CA</p>
                         </div>
-                        <div class="info-box-link">
-                            <a href="#">View Profile</a>
+                    </div>
+                    <div class="info-box-link">
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <a href="#"><img src="resources/img/golden-retriever.jpg" alt="Golden Retriever"></a>
+                    <div class="details">
+                        <a class="info-box-name" href="#">Charli</a>
+                        <i class="far fa-heart"></i>
+                        <p class="pet-breed">Golden Retriever</p>
+                        <div class="additional-info">
+                            <p>Young - Female - Medium</p>
+                            <br>
+                            <p>Manassas, VA</p>
                         </div>
+                    </div>
+                    <div class="info-box-link">
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <a href="#"><img src="resources/img/tabby-cat.jpg" alt="Tabby"></a>
+                    <div class="details">
+                        <a class="info-box-name" href="#">Smokey</a>
+                        <i class="far fa-heart"></i>
+                        <p class="pet-breed">Tabby</p>
+                        <div class="additional-info">
+                            <p>Adult - Male - Medium</p>
+                            <br>
+                            <p>Miami, FL</p>
+                        </div>
+                    </div>
+                    <div class="info-box-link">
+                        <a href="#">View Profile</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +180,7 @@
                 <hr>
             </div>
             <div class="row info-box-row">
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-4">
                     <div class="info-box">
                         <a href="#"><img src="resources/img/donation-cash.jpg" alt="Donate"></a>
                         <a class="info-box-name" href="#">Donate</a>
@@ -157,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-4">
                     <div class="info-box">
                         <a href="#"><img src="resources/img/adopt-dog.jpg" alt="Adopt"></a>
                         <a class="info-box-name" href="#">Adopt</a>
@@ -169,12 +204,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-4">
                     <div class="info-box">
                         <a href="#"><img src="resources/img/volunteer-dog.jpg" alt="Volunteer"></a>
                         <a class="info-box-name" href="#">Volunteer</a>
                         <div class="additional-info">
                             <p>Volunteering is a great way to help pets in need, and meet other caring people like you!</p>
+                        </div>
+                        <div class="info-box-link">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="info-box">
+                        <a href="#"><img src="resources/img/foster.JPG" alt="Volunteer"></a>
+                        <a class="info-box-name" href="#">FOSTER</a>
+                        <div class="additional-info">
+                            <p>Contribute by providing temporary care for a pet during the adoption process.</p>
                         </div>
                         <div class="info-box-link">
                             <a href="#">Read More</a>
@@ -227,6 +274,7 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="/vendors/js/owl.carousel.min.js"></script>
         <script src="resources/js/script.js"></script>
     </body>
 </html>

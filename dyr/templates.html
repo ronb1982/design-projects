@@ -1,0 +1,92 @@
+<!-- TEMPLATES -->
+<!-- Navigation -->
+<template id="nav-template">
+    <nav>
+        <div class="row">
+            <a href="#" class="logo">DYR</a>
+            <a class="mobile-nav-icon js--nav-icon">
+                <i class="icon fas fa-bars"></i>
+            </a>
+            <ul class="nav main-nav js--main-nav">
+                <li><a href="search.html">Find a Pet</a></li>
+                <li><a href="#">Find Shelters & Rescues</a></li>
+                <li><a href="#">Adoption Info</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Join | Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</template>
+
+<!-- Search Form -->
+<template id="searchform-template">
+    <form method="post" action="#">
+        <div class="input-field">
+            <input type="text" placeholder="Enter Location">
+        </div>
+        <div class="input-field">
+            <select name="pet-type">
+                <option value="" selected disabled hidden>Select Pet Type</option>
+                <option value="dogs">Dogs</option>
+                <option value="cats">Cats</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="input-field">
+            <select name="breed">
+                <option value="" selected disabled hidden>Select Breed (Optional)</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="input-field">
+            <a class="btn btn-primary" href="#">Find a pet</a>
+        </div>
+    </form>
+</template>
+
+<!-- Newsletter -->
+<template id="newsletter-template">
+    <div class="row">
+        <form method="post" action="#">
+            <p>Stay up to date</p>
+            <div class="input-field">
+                <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Enter Email">
+            </div>
+            <div class="input-field">
+                <a class="btn btn-primary" href="#">Subscribe</a>
+            </div>
+        </form>
+    </div>
+</template>
+
+<!-- Footer -->
+<template id="footer-template">
+    <div class="row">
+        <a href="#" class="logo">DYR</a>
+    </div>
+    <div class="row">
+        <ul class="nav footer-nav">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Partnering Shelters</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <p>Made in New York - Copyright 2017 - All rights reserved.</p>
+    </div>
+</template>

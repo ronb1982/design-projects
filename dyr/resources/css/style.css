@@ -36,7 +36,7 @@ body {
 /* ---------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------- */
-header {
+.banner-img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url(img/dogbanner.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(img/dogbanner.jpg);
     background-size: cover;
@@ -447,4 +447,101 @@ footer .row:last-child {
 /* ---------------------------------------------- */
 .owl-theme .owl-nav [class*=owl-] {
     background-color: #2c2c2c !important;
+}
+
+/*----------------------- SEARCH.HTML ------------------------------*/
+/* ---------------------------------------------- */
+/* SEARCH RESULTS */
+/* ---------------------------------------------- */
+.breadcrumb {
+    text-align: left;
+}
+
+.breadcrumb p:first-of-type {
+    font-size: 85%;
+    font-weight: 100;
+    color: #606060;
+}
+
+.breadcrumb p:last-of-type {
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.breadcrumb p { margin-top: 40px; }
+
+.filter-menu {
+    margin-top: 20px;
+    display: inline-block;
+    float: right;
+    font-size: 100%;
+    color: #2c2c2c;
+}
+
+.info-box-row {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+}
+
+.section-results img {
+    height: auto;
+}
+
+.section-results .col { padding-right: 10px; }
+
+/* ---------------------------------------------- */
+/* PAGINATION */
+/* ---------------------------------------------- */
+.section-pagination {
+    width: 325px;
+    margin: 0 auto;
+}
+
+.pagination {
+    text-align: center;
+    border: 1px solid #ccc;
+    list-style: none;
+    box-shadow: 2px 2px #d4d4d4;
+}
+
+.pagination li {
+    margin: 10px 0;
+}
+
+.pagination .page {
+    margin-right: 4px;
+}
+
+.pagination:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/*.pagination :not('.page'):after {
+    border-left: 2px solid red;
+    content: "";
+    margin-left: 10px;
+}*/
+
+.pagination:last-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.pagination li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.pagination li a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.pagination .active a:link,
+.pagination .active a:visited {
+    font-weight: bold;
+    color: #43a2f3;
+    text-decoration: underline;
 }

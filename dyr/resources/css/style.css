@@ -49,6 +49,9 @@ header .logo {
     margin: 10px 0 0 0;
 }
 
+.header-no-img {
+    padding-bottom: 60px;
+}
 /* ---------------------------------------------- */
 /* REUSABLE ELEMENTS */
 /* ---------------------------------------------- */
@@ -231,6 +234,37 @@ select {
 .fa-heart:hover {
     color: #43a2f3;
 }
+
+.breadcrumb {
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a:link,
+.breadcrumb a:visited {
+    display: inline-block;
+    float: right;
+    font-size: 100%;
+    color: #2c2c2c;
+    margin: 30px 50px 0 0;
+    text-decoration: none;
+    font-size: 90%;
+    color: #43a2f3;
+}
+
+.breadcrumb p:first-of-type {
+    font-size: 85%;
+    font-weight: 100;
+    color: #606060;
+}
+
+.breadcrumb p:last-of-type {
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.breadcrumb p { margin-top: 40px; }
 
 /* ---------------------------------------------- */
 /* NAVIGATION */
@@ -452,27 +486,11 @@ footer .row:last-child {
 /* ---------------------------------------------- */
 /* SEARCH RESULTS */
 /* ---------------------------------------------- */
-.breadcrumb {
-    position: relative;
-    text-align: left;
-}
-
-.breadcrumb p:first-of-type {
-    font-size: 85%;
-    font-weight: 100;
-    color: #606060;
-}
-
-.breadcrumb p:last-of-type {
-    display: inline-block;
-    letter-spacing: 0.5px;
-}
-
-.breadcrumb p { margin-top: 40px; }
-
 .info-box-row {
     margin-bottom: 40px;
 }
+
+.section-results { padding-top: 0; }
 
 .section-results img {
     height: auto;
@@ -602,4 +620,31 @@ footer .row:last-child {
     font-weight: bold;
     color: #43a2f3;
     text-decoration: underline;
+}
+
+/*----------------------- PROFILE.HTML ------------------------------*/
+/* ---------------------------------------------- */
+/* PROFILE */
+/* ---------------------------------------------- */
+.section-profile {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.section-profile h1 {
+    font-weight: 500;
+    font-size: 200%;
+}
+
+.section-profile h2 {
+    text-align: left;
+}
+
+.section-profile img {
+    width: 80%;
+    height: auto;
+}
+
+.section-profile p {
+    margin-top: 10px;
 }

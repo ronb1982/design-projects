@@ -16,17 +16,15 @@
         <script src="vendors/js/fontawesome-all.min.js"></script>
         <title>Pet Search</title>
     </head>
-    <style>
-        header {
-            padding-bottom: 60px;
-        }
-    </style>
     <body>
         <!-- NAV BAR inserted via JS -->
-        <header></header>
-        <section class="section-search">
+        <header class="header-no-img"></header>
+        
+        <section class="section-search"></section>
+        
+        <section class="section-results">
             <div class="row breadcrumb">
-                <p>Home > New York > Dogs</p>
+                <p>Home &gt; New York &gt; Dogs</p>
                 <p>891 Adoptable Dogs Found</p>
                 <div class="input-field filter-menu">
                     <select name="filters">
@@ -98,14 +96,12 @@
                         </form>
                     </div>
             </div>
-        </section>
-        <section class="section-results">
             <div class="row info-box-row">
                 <div class="col span-1-of-3">
                     <div class="info-box">
-                        <a href="#"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
+                        <a href="profile.html"><img src="resources/img/american-foxhound.jpg" alt="American Foxhound"></a>
                         <div class="details">
-                            <a class="info-box-name" href="#">Lily</a>
+                            <a class="info-box-name" href="profile.html">Lily</a>
                             <i class="far fa-heart"></i>
                             <p class="pet-breed">American Foxhound</p>
                             <div class="additional-info">

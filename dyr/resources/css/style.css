@@ -151,7 +151,6 @@ select {
     background-color: #2c2c2c;
     width: 90%;
     position: relative;
-    margin-left: 5%;
 }
 
 .info-box p,
@@ -454,6 +453,7 @@ footer .row:last-child {
 /* SEARCH RESULTS */
 /* ---------------------------------------------- */
 .breadcrumb {
+    position: relative;
     text-align: left;
 }
 
@@ -470,17 +470,7 @@ footer .row:last-child {
 
 .breadcrumb p { margin-top: 40px; }
 
-.filter-menu {
-    margin-top: 20px;
-    display: inline-block;
-    float: right;
-    font-size: 100%;
-    color: #2c2c2c;
-}
-
 .info-box-row {
-    width: 70%;
-    margin-left: 15%;
     margin-bottom: 40px;
 }
 
@@ -489,6 +479,78 @@ footer .row:last-child {
 }
 
 .section-results .col { padding-right: 10px; }
+
+/* ---------------------------------------------- */
+/* FILTER MENU */
+/* ---------------------------------------------- */
+.filter-menu {
+    display: block;
+    font-size: 100%;
+    color: #2c2c2c;
+    float: right;
+}
+
+.filter-options {
+    background-color: #f8f8f8;
+    z-index: 9998;
+    border: 0.5px solid #ccc;
+    width: 80%;
+    position: absolute;
+    top: 88%;
+    right: 2.25%;
+    padding: 20px 40px;
+    font-size: 75%;
+}
+
+.filter-options input {
+    margin: 0 0 7px 10px;
+    width: 12px;
+    height: auto;
+}
+
+.filter-options input:first-of-type {
+    margin-top: 10px;
+}
+
+.filter-options label {
+    margin-left: 7px;
+}
+
+.filter-buttons {
+    float: right;
+    margin: 50px 0;
+}
+
+.filter-buttons .btn {
+    margin-left: 35px;
+}
+
+.filter-buttons .btn:first-of-type:link,
+.filter-buttons .btn:first-of-type:visited {
+    color: #43a2f3;
+    border: 1px solid #43a2f3;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.filter-buttons .btn:first-of-type:hover,
+.filter-buttons .btn:first-of-type:active {
+    color: #fff;
+    background-color: #138af0;
+}
+
+.filter-buttons .btn:nth-of-type(2):link,
+.filter-buttons .btn:nth-of-type(2):visited {
+    color: #fff;
+    border: 1px solid #43a2f3;
+    background-color: #43a2f3;
+    padding: 15px 30px;
+}
+
+.filter-buttons .btn:nth-of-type(2):hover,
+.filter-buttons .btn:nth-of-type(2):active {
+    border: 1px solid #138af0;
+    background-color: #138af0;
+}
 
 /* ---------------------------------------------- */
 /* PAGINATION */
@@ -517,12 +579,6 @@ footer .row:last-child {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-
-/*.pagination :not('.page'):after {
-    border-left: 2px solid red;
-    content: "";
-    margin-left: 10px;
-}*/
 
 .pagination:last-child {
     border-top-right-radius: 25px;

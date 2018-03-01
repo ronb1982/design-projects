@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/owl.carousel.min.css"/>
         <link rel="stylesheet" type="text/css" href="vendors/css/owl.theme.default.min.css"/>
         <link rel="import" href="templates.html" id="templates">
-        
+
         <script src="vendors/js/fontawesome-all.min.js"></script>
         <title>Pet Search</title>
     </head>
@@ -33,6 +33,70 @@
                         <option value="" selected disabled hidden>Filters</option>
                     </select>
                 </div>
+                <div class="filter-options">
+                        <form method="post" action="#">
+                            <div class="row">
+                                <div class="col span-1-of-5">
+                                    <h3>Distance</h3>
+                                    
+                                    <input type="radio" name="distance" id="within-10" value="within-10">
+                                    <label for="within-10">Within 10 miles</label><br>
+                                    
+                                    <input type="radio" name="distance" id="within-25" value="within-25"><label for="within-25">Within 25 miles</label><br>
+                                    
+                                    <input type="radio" name="distance" id="within-50" value="within-50"><label for="within-50">Within 50 miles</label><br>
+                                    
+                                    <input type="radio" name="distance" id="within-100" value="within-100"><label for="within-100">Within 100 miles</label>
+                                </div>
+                                <div class="col span-1-of-5">
+                                    <h3>Size</h3>
+                                    
+                                    <input type="checkbox" name="size" id="small" value="small"><label for="small">Small</label><br>
+                                    
+                                    <input type="checkbox" name="size" id="medium" value="medium"><label for="medium">Medium</label><br>
+                                    
+                                    <input type="checkbox" name="size" id="large" value="large"><label for="large">Large</label><br>
+                                    
+                                    <input type="checkbox" name="size" id="xtra-large" value="xtra-large"><label for="xtra-large">X-Large</label>
+                                </div>
+                                <div class="col span-1-of-5">
+                                    <h3>Age</h3>
+                                    
+                                    <input type="checkbox" name="age" id="baby" value="baby"><label for="baby">Baby</label><br>
+                                    
+                                    <input type="checkbox" name="age" id="young" value="young"><label for="young">Young</label><br>
+                                    
+                                    <input type="checkbox" name="age" id="adult" value="adult"><label for="adult">Adult</label><br>
+                                    
+                                    <input type="checkbox" name="age" id="senior" value="senior"><label for="senior">Senior</label>
+                                </div>
+                                <div class="col span-1-of-5">
+                                    <h3>Gender</h3>
+                                    
+                                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label><br>
+                                    
+                                    <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                                </div>
+                                <div class="col span-1-of-5">
+                                    <h3>Characteristics</h3>
+                                    
+                                    <input type="checkbox" name="characteristics" id="house-trained" value="house-trained"><label for="house-trained">House Trained</label><br>
+                                    
+                                    <input type="checkbox" name="characteristics" id="spayed-neutered" value="spayed-neutered"><label for="spayed-neutered">Spayed / Neutered</label><br>
+                                    
+                                    <input type="checkbox" name="characteristics" id="dog-friendly" value="dog-friendly"><label for="dog-friendly">Dog-Friendly</label><br>
+                                    
+                                    <input type="checkbox" name="characteristics" id="cat-friendly" value="cat-friendly"><label for="cat-friendly">Cat-Friendly</label><br>
+                                    
+                                    <input type="checkbox" name="characteristics" id="great-with-kids" value="great-with-kids"><label for="great-with-kids">Great with kids</label>
+                                </div>
+                            </div>
+                            <div class="row filter-buttons">
+                                <a class="btn" href="#">Clear</a>
+                                <a class="btn" href="#">Apply Filters</a>
+                            </div>
+                        </form>
+                    </div>
             </div>
         </section>
         <section class="section-results">

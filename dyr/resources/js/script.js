@@ -59,4 +59,8 @@ $(document).ready(function() {
             }
         }
     });
+    
+    $('.filter-menu').click(function() {
+        $('.filter-options').fadeToggle(200);
+    });
 });

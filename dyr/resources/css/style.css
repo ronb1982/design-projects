@@ -266,6 +266,27 @@ select {
 
 .breadcrumb p { margin-top: 40px; }
 
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-arrow {
+    position: absolute;
+    text-align: center;
+    line-height: 42px;
+    font-size: 140%;
+    font-weight: 100;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    top: 41%;
+    z-index: 3;
+    opacity: 0.7;
+    color: #2c2c2c;
+}
+
 /* ---------------------------------------------- */
 /* NAVIGATION */
 /* ---------------------------------------------- */
@@ -341,6 +362,20 @@ nav {
 .info-box .details {
     margin-top: 10px;
 }
+
+.section-featured .carousel-arrow {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.section-featured .arrow-left {
+    left: 6%;
+}
+
+.section-featured .arrow-right {
+    right: 6%;
+}
+
 /* ---------------------------------------------- */
 /* DESCRIPTION */
 /* ---------------------------------------------- */
@@ -626,25 +661,36 @@ footer .row:last-child {
 /* ---------------------------------------------- */
 /* PROFILE */
 /* ---------------------------------------------- */
-.section-profile {
-    width: 90%;
-    margin-left: 5%;
-}
-
 .section-profile h1 {
     font-weight: 500;
     font-size: 200%;
 }
 
-.section-profile h2 {
+.pet-details h2 {
     text-align: left;
 }
 
-.section-profile img {
-    width: 80%;
-    height: auto;
+.pet-details p {
+    margin-top: 10px;
 }
 
-.section-profile p {
-    margin-top: 10px;
+.section-featured .owl-item:not(.active),
+.section-profile .owl-item:not(.active) {
+    opacity: 0.6;
+}
+
+.section-profile .owl-item img {
+    height: 500px;
+}
+
+.section-profile .js--carousel-profile {
+    width: 80%;
+}
+
+.section-profile .arrow-left {
+    left: 12.5%;
+}
+
+.section-profile .arrow-right {
+    right: 12.5%;
 }

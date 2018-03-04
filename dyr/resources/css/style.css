@@ -123,6 +123,25 @@ select {
     font-size: 75%;
 }
 
+.separator {
+    margin: 60px 0;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* Links */
+.content-link:link,
+.content-link:visited {
+    display: inline-block;
+    float: right;
+    font-size: 100%;
+    color: #2c2c2c;
+    margin: 30px 50px 0 0;
+    text-decoration: none;
+    font-size: 90%;
+    color: #43a2f3;
+}
+
 /* Buttons */
 .btn {
     text-transform: uppercase;
@@ -140,6 +159,44 @@ select {
 .btn-primary:hover {
     background-color: #138af0;
 }
+
+/* Button Groups which are wrapped within a div */
+.btn-group {
+    float: right;
+    margin: 60px 0 30px 0;
+}
+
+.btn-group .btn {
+    margin-left: 35px;
+}
+
+.btn-group .btn:first-of-type:link,
+.btn-group .btn:first-of-type:visited {
+    color: #43a2f3;
+    border: 1px solid #43a2f3;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.btn-group .btn:first-of-type:hover,
+.btn-group .btn:first-of-type:active {
+    color: #fff;
+    background-color: #138af0;
+}
+
+.btn-group .btn:nth-of-type(2):link,
+.btn-group .btn:nth-of-type(2):visited {
+    color: #fff;
+    border: 1px solid #43a2f3;
+    background-color: #43a2f3;
+    padding: 15px 30px;
+}
+
+.btn-group .btn:nth-of-type(2):hover,
+.btn-group .btn:nth-of-type(2):active {
+    border: 1px solid #138af0;
+    background-color: #138af0;
+}
+
 
 .logo {
     color: #fff;
@@ -231,26 +288,12 @@ select {
     transition: color 0.2s;
 }
 
-.fa-heart:hover {
-    color: #43a2f3;
-}
+.fa-heart:hover { color: #43a2f3; }
 
 .breadcrumb {
     position: relative;
     text-align: left;
     margin-bottom: 20px;
-}
-
-.breadcrumb a:link,
-.breadcrumb a:visited {
-    display: inline-block;
-    float: right;
-    font-size: 100%;
-    color: #2c2c2c;
-    margin: 30px 50px 0 0;
-    text-decoration: none;
-    font-size: 90%;
-    color: #43a2f3;
 }
 
 .breadcrumb p:first-of-type {
@@ -525,7 +568,10 @@ footer .row:last-child {
     margin-bottom: 40px;
 }
 
-.section-results { padding-top: 0; }
+.section-results {
+    padding: 0;
+    margin: 0;
+}
 
 .section-results img {
     height: auto;
@@ -569,42 +615,6 @@ footer .row:last-child {
 
 .filter-options label {
     margin-left: 7px;
-}
-
-.filter-buttons {
-    float: right;
-    margin: 60px 0 30px 0;
-}
-
-.filter-buttons .btn {
-    margin-left: 35px;
-}
-
-.filter-buttons .btn:first-of-type:link,
-.filter-buttons .btn:first-of-type:visited {
-    color: #43a2f3;
-    border: 1px solid #43a2f3;
-    transition: color 0.2s, background-color 0.2s;
-}
-
-.filter-buttons .btn:first-of-type:hover,
-.filter-buttons .btn:first-of-type:active {
-    color: #fff;
-    background-color: #138af0;
-}
-
-.filter-buttons .btn:nth-of-type(2):link,
-.filter-buttons .btn:nth-of-type(2):visited {
-    color: #fff;
-    border: 1px solid #43a2f3;
-    background-color: #43a2f3;
-    padding: 15px 30px;
-}
-
-.filter-buttons .btn:nth-of-type(2):hover,
-.filter-buttons .btn:nth-of-type(2):active {
-    border: 1px solid #138af0;
-    background-color: #138af0;
 }
 
 /* ---------------------------------------------- */
@@ -661,17 +671,18 @@ footer .row:last-child {
 /* ---------------------------------------------- */
 /* PROFILE */
 /* ---------------------------------------------- */
+.section-profile {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
 .section-profile h1 {
     font-weight: 500;
     font-size: 200%;
 }
 
-.pet-details h2 {
-    text-align: left;
-}
-
-.pet-details p {
-    margin-top: 10px;
+.section-profile .row:first-of-type {
+    margin-bottom: 30px;
 }
 
 .section-featured .owl-item:not(.active),
@@ -693,4 +704,67 @@ footer .row:last-child {
 
 .section-profile .arrow-right {
     right: 12.5%;
+}
+
+.section-profile .col {
+    margin: 0;
+    padding: 0;
+}
+
+.pet-details { width: 25%; font-size: 90%; }
+.pet-details h2 { text-align: left; }
+.pet-details p { margin-top: 10px; }
+
+.pet-details .btn-group {
+    float: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pet-details .btn {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* Social links */
+.section-profile .social-links { margin: 5px 0 0 85px; }
+.section-profile .social-links ul { margin: 0; padding: 0; }
+
+.section-profile .social-links li a:link,
+.section-profile .social-links li a:visited {
+    color: #5d5d5d;
+}
+
+.section-profile .social-links .fa-heart {
+    color: #5d5d5d;
+    font-size: 100%;
+    float: none;
+}
+
+.section-profile .social-links .fa-heart:hover { color: #43a2f3; }
+
+.section-profile .social-links, .section-profile .content-link { display: inline-block; }
+
+.profile-links {
+    position: relative;
+}
+
+.profile-links .content-link {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    right: 40.5%;
+}
+
+/* ---------------------------------------------- */
+/* PET INFORMATION */
+/* ---------------------------------------------- */
+.section-information {
+    padding: 0;
+}
+.section-information h2 {
+    text-align: left;
+    color: #43a2f3;
 }
